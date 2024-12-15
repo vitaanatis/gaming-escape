@@ -1,4 +1,4 @@
-# latteWeb
+# The Gaming Escape
 welcome to gaming paradise!!!
 
 # Features
