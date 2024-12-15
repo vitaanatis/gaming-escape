@@ -2,8 +2,7 @@
 welcome to gaming paradise!!!
 
 # Features
-proxy, not that big of a file size, uhhhhh
-
+100+ games with a proxy that actually works with geforce now.
 # Credits
 [Ben_Da_Builder](https://benrogo.net) < runs the bare server for this website!!
 
