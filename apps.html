@@ -1,0 +1,73 @@
+<html>
+  <head>
+    <style>
+      .game-grid {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .game-button {
+            position: relative;
+            background-color: #000000;
+            border-radius: 10px;
+            width: 150px;
+            height: 150px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            overflow: hidden;
+        }
+        .game-button img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 10px;
+            transition: opacity 0.3s ease;
+        }
+        .game-button:hover img {
+            opacity: 0.3;
+        }
+        .overlay-text {
+            position: absolute;
+            color: white;
+            font-family: 'Comfortaa', sans-serif;
+            font-size: 18px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+            pointer-events: none;
+            z-index: 1;
+            width: 100%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .game-button:hover .overlay-text {
+            opacity: 1;
+        }
+        .game-title {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size: 36px;
+            margin: 10px 0 0 0;
+        }
+        .games-title {
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+    </style>
+  </head>
+  <body>
+    <div class="game-button">
+            <a href="public/assets/games/yohoho-io">
+                <img src="public/assets/images/yohohoio.png" alt="Yohoho.io">
+                <div class="overlay-text">Yohoho.io</div>
+            </a>
+  </body>
+</html>
