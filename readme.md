@@ -13,4 +13,4 @@ It is static, so all you need to do to clone it, is fork this , name it (your gi
 
 [Smartfoloo](https://github.com/smartfoloo) < person who I took the games from
 
-[LatteWeb](https://github.com/MochiWorkshop/latteWeb). for the proxy.
+[LatteWeb](https://github.com/MochiWorkshop/latteWeb) for the proxy.
