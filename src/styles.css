@@ -30,6 +30,7 @@ body {
   text-decoration: none;
 }
     ul {
+  position: fixed;
   backdrop-filter:blur(20px) brightness(150%);
   list-style-type: none;
   margin: 0;
