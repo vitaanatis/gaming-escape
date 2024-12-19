@@ -1,6 +1,6 @@
 self.__uv$config = {
         prefix: '/static/uv/service/',
-        bare: 'https://bare.benrogo.net/',
+        bare: 'https://nodiddydogwasatthediddyparty.global.ssl.fastly.net/bare/',
         encodeUrl: Ultraviolet.codec.xor.encode,
         decodeUrl: Ultraviolet.codec.xor.decode,
         handler: '/static/uv/handler.js',
