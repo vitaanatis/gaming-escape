@@ -31,6 +31,8 @@ body {
   text-decoration: none;
 }
     ul {
+ z-index: 1000;
+  position: fixed;
   backdrop-filter:blur(20px) brightness(150%);
   list-style-type: none;
   margin: 0;
@@ -39,6 +41,9 @@ body {
   font-family: 'Lexend', sans-serif;
   color: white;
   text-shadow: #000000 1px 0 10px;
+   display: flex;
+  justify-content: space-between;
+  width: 100%;
   
 }
 
