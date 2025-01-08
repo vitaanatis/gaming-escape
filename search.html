@@ -15,17 +15,71 @@
   
   gtag('config', 'G-YTQFSZLKJB');
   </script>
-    <ul>
+   <style>
+       a {
+  color: white;
+  background-color: transparent;
+  text-decoration: none;
+}
+    ul {
+ z-index: 1000;
+  position: fixed;
+  backdrop-filter:blur(20px) brightness(100%);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-family: 'Lexend', sans-serif;
+  color: white;
+  text-shadow: #000000 1px 0 10px;
+   display: flex;
+  justify-content: space-between;
+  width: 100%;
+  
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+ background-color:  #00bbff;
+}
+
+.active {
+  background-color:  #00bbff;
+  }
+ul {
+   display: block;
+  
+        }
+ul img {
+  height: 35px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 5px;
+  margin-down: 5px;
+  float:right;
+        }
+   </style>
+  </head>
+  <body>
+     <ul>
   <li><a  href="index.html">Home</a> </li>
   <li><a class="active" href="games.html">Games</a></li>
   <li><a href="apps.html">Apps</a></li>
   <li><a href="search.html">Search</a></li>
  <a href="about.html"> <img src=/Logo.jpg></a> 
   <li style="float:right"><a href="about.html">About</a></li>
-</ul> 
-  </head>
-  <body>
-      
+</ul>   
   <iframe id="proxyFrame" src="/static/index.html" width="80vw" height="80vh" style="width: 1278px; height: 539px;"></iframe>
   <br>
       <br>
