@@ -33,7 +33,7 @@ body {
     ul {
  z-index: 1000;
   position: fixed;
-  backdrop-filter:blur(20px) brightness(150%);
+  backdrop-filter:blur(20px) brightness(100%);
   list-style-type: none;
   margin: 0;
   padding: 0;
