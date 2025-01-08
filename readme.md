@@ -4,7 +4,7 @@ welcome to gaming paradise!!!
 # Features
 100+ games  
 
-A proxy that actually works with geforce now
+Trying to fix geforce now currently. Let me know if it works. SwarthyLeader80 on Discord.
 
 It is static, so all you need to do to clone it, is fork this , name it (your github name).github.io, and host it on github pages.
 
