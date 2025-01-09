@@ -10,7 +10,9 @@
 html {
  background-color: #000000;
  color: white;
-text-align: center;
+ text-align: center;
+ display: flex;
+ justify-content: center;
  margin: 0;
  padding: 0;
 }
