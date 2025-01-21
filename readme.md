@@ -9,7 +9,7 @@ Geforce now actually works on this proxy unlike many others.
 It is static, so all you need to do to clone it, is fork this , name it (your github name).github.io, and host it on github pages.
 
 # Credits
-[Szvy Central](https://github.com/szvy) < runs the bare server for this website
+[Benrogo](https://benrogo.net) < runs the bare server for this website
 
 [Smartfoloo](https://github.com/smartfoloo) < person who I took the games from
 
