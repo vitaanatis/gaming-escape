@@ -21,7 +21,6 @@
             justify-content: center;
             gap: 20px;
             padding: 50px 100px;
-          
         }
         .game-button {
             position: relative;
@@ -77,6 +76,23 @@
             font-size: 24px;
             margin-bottom: 20px;
         }
+        .search-bar-container {
+          
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+.search-bar {
+  position: fixed;
+  width: 50%;
+  padding: 10px;
+  border-radius: 20px;
+  border: 2px solid #000;
+  backdrop-filter:blur(20px) brightness(50%);
+  color: white;
+  font-size: 16px;
+  z-index: 2;
+}
     </style>
   </head>
   <body style="overflow: visible">
@@ -88,7 +104,10 @@
  <a href="about.html"> <img src=/Logo.jpg></a> 
   <li style="float:right"><a href="about.html">About</a></li>
 </ul> 
-
+<div class="search-bar-container">
+        <input type="text" id="gameSearch" class="search-bar" placeholder="Search for a game..." oninput="filterGames()">
+    </div>
+    
     <div class="game-grid">
        <div class="game-button">
             <a href="public/assets/games/eaglercraft">
@@ -1037,6 +1056,21 @@
                 <img src="public/assets/images/theimpossiblequiz2.png" alt="">
                 <div class="overlay-text">The Impossible Quiz 2</div>
                 </a> </div>
+                <script>
+        function filterGames() {
+            const searchInput = document.getElementById('gameSearch').value.toLowerCase();
+            const games = document.querySelectorAll('.game-button');
+
+            games.forEach(game => {
+                const gameTitle = game.querySelector('.overlay-text').textContent.toLowerCase();
+                if (gameTitle.includes(searchInput)) {
+                    game.style.display = 'block';
+                } else {
+                    game.style.display = 'none';
+                }
+            });
+        }
+    </script>
     </div>
       <div class="dot"></div>
   </body>
