@@ -33,6 +33,7 @@
             align-items: center;
             cursor: pointer;
             overflow: hidden;
+            transition: transform 0.2s;
         }
         .game-button img {
             width: 100%;
@@ -40,9 +41,16 @@
             object-fit: cover;
             border-radius: 10px;
             transition: opacity 0.3s ease;
+           
+
         }
         .game-button:hover img {
             opacity: 0.5;
+          
+        }
+      .game-button:hover {
+             transform: scale(1.05);
+          
         }
         .overlay-text {
             margin: 10px, 0px;
@@ -659,13 +667,13 @@
                 </a> </div>
 
           <div class="game-button">
-            <a href="public/assets/games/retro-bowl"">
+            <a href="public/assets/games/retro-bowl">
                 <img src="public/assets/images/retrobowl.png" alt="">
                 <div class="overlay-text">Retro Bowl</div>
                 </a> </div>
 
        <div class="game-button">
-            <a href="public/assets/games/tomb-of-the-mask"">
+            <a href="public/assets/games/tomb-of-the-mask">
                 <img src="public/assets/images/tombofthemask.png" alt="">
                 <div class="overlay-text">Tomb of the Mask</div>
                 </a> </div>
@@ -691,7 +699,7 @@
           <div class="game-button">
             <a href="public/assets/games/sausage-flip">
                 <img src="public/assets/images/sausageflip.png" alt="">
-                <div class="overlay-text">Sausage Flip"</div>
+                <div class="overlay-text">Sausage Flip</div>
                 </a> </div>
 
           <div class="game-button">
@@ -967,7 +975,7 @@
       <div class="game-button">
             <a href="public/assets/games/tightrope-theatre">
                 <img src="public/assets/images/tightropetheatre.png" alt="">
-                <div class="overlay-text">Tightrope Theatre"</div>
+                <div class="overlay-text">Tightrope Theatre</div>
                 </a> </div>
 
       <div class="game-button">
@@ -1058,6 +1066,8 @@
                 <img src="public/assets/images/theimpossiblequiz2.png" alt="">
                 <div class="overlay-text">The Impossible Quiz 2</div>
                 </a> </div>
+                
+                
                 <script>
         function filterGames() {
             const searchInput = document.getElementById('gameSearch').value.toLowerCase();
@@ -1073,6 +1083,8 @@
             });
         }
     </script>
+    
+    
     </div>
       <div class="dot"></div>
   </body>
