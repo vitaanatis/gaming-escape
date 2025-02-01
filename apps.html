@@ -34,6 +34,7 @@
             align-items: center;
             cursor: pointer;
             overflow: hidden;
+          transition: transform 0.2s;
         }
         .game-button img {
             width: 100%;
@@ -44,6 +45,10 @@
         }
         .game-button:hover img {
             opacity: 0.5;
+        }
+      .game-button:hover {
+             transform: scale(1.05);
+          
         }
         .overlay-text {
             margin: 10px, 0px;
