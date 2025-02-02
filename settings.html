@@ -1,4 +1,5 @@
 
+
 <html lang="en">
  <html>
 <head>
@@ -15,7 +16,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Gaming Escape</title>
-  <link rel="stylesheet" href="https://gr4ys0n.github.io/src/styles.css">
+  <link rel="stylesheet" href="src/styles.css">
   <link rel="icon" type="image/x-icon" href="src/images/favicon.jpg">
    <style>
       .roundbox {
@@ -34,9 +35,10 @@
 }
 .settingbox {
   
-  padding: 15px 10px;
+  padding: 0px 10px;
+  padding-top: 30px;
   margin: 15px;
-  color: black;
+  color: white;
   backdrop-filter:blur(20px) brightness(110%);
   background-color: rgb(255 255 255 / 0.075);
   box-shadow: 0 0 15px 5px rgb(0 0 0 / 0.3);
@@ -55,16 +57,20 @@
 .settingbox p {
    font-size: 25px;
    text-align: center;
+   margin-top: 30px;
 }
 
 .settingbox button {
-  backdrop-filter:blur(20px) brightness(110%);
-  border: white ;
+  padding: 10px 20px;
+  transition: transform 0.15s;
+  background: transparent;
+  border: 2px solid white ;
   border-radius: 10px;
+  margin-top: 10px;
 }
 
 .settingbox button:hover {
-  transform: scale(1.01);
+  transform: scale(1.05);
     cursor: pointer;
 }
    </style> 
@@ -87,6 +93,7 @@
   <div class="settingbox">
     <strong>About:Blank Cloaking</strong>
     <p>Disguises website in a about:blank page.</p>
+    <button onclick="openInAboutBlank()"><strong style="font-size: 25px; color: white; font-family: Nunito, sans-serif;">Open Blanker </strong></button>
     </div>
     
   </div>
@@ -94,4 +101,35 @@
   </div>
   
  <div class="dot"></div>
+<script>
+        function openInAboutBlank() {
+            // Open a new window (about:blank by default)
+            var win = window.open();
+            
+            // Ensure the window was successfully opened
+            if (!win) {
+                alert("Popup was blocked. Please allow popups for this site.");
+                return;
+            }
+
+            // Set the URL and create an iframe to load it
+            var url = "/index.html";
+            var iframe = win.document.createElement('iframe');
+            iframe.style.width = "100%";
+            iframe.style.height = "100%";
+            iframe.style.border = "none";
+            iframe.src = url;
+            
+            // Add styles to remove margin from the body of the new window
+            var style = win.document.createElement('style');
+            style.innerHTML = 'body { margin: 0; padding: 0; }';  // Remove margin and padding
+            win.document.head.appendChild(style);
+
+            // Append iframe to the new window's document body
+            win.document.body.appendChild(iframe);
+
+            // Focus the new window (if needed)
+            win.focus();
+        }
+    </script>
   </body></html>
