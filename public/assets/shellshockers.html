@@ -40,7 +40,7 @@
 .game-iframe {
                 
             border: none;
-            border-radius: 10px 10px 10px 10px;
+            border-radius: 10px 10px 0 0;
             flex-grow: 1;
         }
         .button-bar {
@@ -91,8 +91,14 @@
 
 <div class="container">
 
-<iframe src="/public/assets/games/shell-shockers/index.html" id="game-frame" class="game-iframe" allowfullscreen></iframe>
+<iframe src="/static/iframe.html#https://shellshock.io/" id="game-frame" class="game-iframe" allowfullscreen></iframe>
 
+    <div class="button-bar">
+        <button onclick="refreshGame()">&#x21bb;</button>
+        <button onclick="toggleFullscreen()">&#x26F6;</button>
+        <button onclick="openInAboutBlank()"><i class="fa-solid fa-up-right-from-square"></i></button>
+        
+    </div>
     </div>
 </div>
 <div class="dot"></div>
