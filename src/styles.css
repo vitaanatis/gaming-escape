@@ -19,8 +19,8 @@ body {
 .dot {
         box-shadow: 0 0 150px 100px #00bbff;
 	border-radius: 50%;
-	height: 320px;
-	width: 320px;
+	height: 275px;
+	width: 275px;
 	background-image: radial-gradient(
 		farthest-corner at 50% 50%,
 		#ffffff, #009dff
