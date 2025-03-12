@@ -117,7 +117,7 @@ const iframe = document.getElementById('myIframe');
         }
   
 function toggleFullscreen() {
-        const iframe = document.getElementById('game-frame');
+        const iframe = document.getElementById('myIframe');
         if (!document.fullscreenElement) {
             iframe.requestFullscreen().catch(err => {
                 alert(`Error attempting to enable fullscreen mode: ${err.message}`);
@@ -132,7 +132,7 @@ function toggleFullscreen() {
     
     
     function refreshGame() {
-        const iframe = document.getElementById('game-frame');
+        const iframe = document.getElementById('myIframe');
         iframe.src = iframe.src;
     }
     
@@ -154,7 +154,7 @@ function toggleFullscreen() {
         newTab.document.head.appendChild(favicon);
 
         const iframe = newTab.document.createElement('iframe');
-        iframe.src = document.getElementById('game-frame').src;
+        iframe.src = document.getElementById('myIframe').src;
         iframe.style.width = '100vw';
         iframe.style.height = '100vh';
         iframe.style.border = 'none';
