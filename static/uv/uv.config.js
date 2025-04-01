@@ -1,6 +1,7 @@
 self.__uv$config = {
     prefix: '/static/uv/service/',
-    bare: "https://nauka.politechnika-nova.edu.pl/",
+    bare: "https://bare-sigma.yourmom.eu.org/",
+    encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/static/uv/uv.handler.js',
     bundle: '/static/uv/uv.bundle.js',
