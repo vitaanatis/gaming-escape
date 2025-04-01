@@ -1,6 +1,6 @@
 self.__uv$config = {
     prefix: '/static/uv/service/',
-    bare: "https://bare-sigma.yourmom.eu.org/",
+    bare: "https://bare.tempshf.world/b/v1",
     encodeUrl: Ultraviolet.codec.xor.encode,
     decodeUrl: Ultraviolet.codec.xor.decode,
     handler: '/static/uv/uv.handler.js',
